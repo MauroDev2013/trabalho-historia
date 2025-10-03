@@ -11,7 +11,7 @@ body {
 .receitas-container {
   max-width: 1200px;
   height: 90vh; 
-  margin: 40px auto;
+  margin: auto;
   padding: 40px;
   background: linear-gradient(135deg, #dfc9a5, #ffd6a5);
   border-radius: 4px;
@@ -77,14 +77,17 @@ ul li, ol li {
 .receita-imagem {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
+  gap: 20px;
 }
 
 .receita-imagem img {
   width: 100%;
   max-width: 450px;
+    scale: 0.9;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   object-fit: cover;
@@ -148,6 +151,9 @@ ul li, ol li {
   }
   ul {
     padding: 0;
+  }
+  .temp-imagem {
+    display: none;
   }
 
 }

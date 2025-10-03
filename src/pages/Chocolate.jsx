@@ -1,6 +1,7 @@
 import React from "react";
 import "./ReceitasPages.css";
 import chocolateFoto from "../assets/imagens/choc.png"; 
+import chocolate from "../assets/imagens/chocolate.jpg"; 
 
 export default function ChocolateQuente() {
   return (
@@ -58,6 +59,7 @@ export default function ChocolateQuente() {
 
       <div className="receita-imagem">
         <img src={chocolateFoto} alt="Chocolate Quente pronto" className="comida-imagem"/>
+        <img src={chocolate} alt="Canjica pronta" className="temp-imagem"/>
       </div>
     </div>
   );

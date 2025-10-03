@@ -2,15 +2,14 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-
 import MilhoIcon from "./components/icons/MilhoIcon";
 import PaoIcon from "./components/icons/PaoIcon";
 import XicaraIcon from "./components/icons/XicaraIcon";
-
 import foto1 from "./assets/imagens/personagem.png";
 import foto2 from "./assets/imagens/personagem2.png";
 import foto3 from "./assets/imagens/personagem3.png";
 import foto4 from "./assets/imagens/personagem4.png";
+import foto5 from "./assets/imagens/personagem5.png";
 
 import "./App.css";
 
@@ -75,6 +74,7 @@ export default function App() {
             <p className="nomeCriador">Isabela A.</p>
             <p className="nomeCriador">Isabela G.</p>
             <p className="nomeCriador">Giovana</p>
+            <p className="nomeCriador">Maria L.</p>
             <p className="nomeCriador">Mauro</p>
           </div>
 
@@ -82,6 +82,7 @@ export default function App() {
             <img src={foto2} alt="foto" className="imagemCriador" />
             <img src={foto3} alt="foto" className="imagemCriador" />
             <img src={foto4} alt="foto" className="imagemCriador" />
+            <img src={foto5} alt="foto" className="imagemCriador" />
             <img src={foto1} alt="foto" className="imagemCriador" />
           </div>
         </div>

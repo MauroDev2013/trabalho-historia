@@ -1,12 +1,15 @@
 import React from "react";
 import "./ReceitasPages.css";
 import canjicaFoto from "../assets/imagens/canjica.png";
+import canjicaHistoria from "../assets/imagens/canjica-origem.jpg";
+
 
 export default function Canjica() {
   return (
     <div className="receitas-container">
       <div className="receitas-text">
-        <h1>🍚 Canjica Brasileira (América Portuguesa)</h1>
+        {/* nao pode mais usar o <br/> é depreciado*/}
+        <h1>🍚 Canjica Brasileira <br/> (América Portuguesa)</h1>
 
         <p className="receita-historia">
           A canjica é uma sobremesa tradicional brasileira feita à base de milho branco, leite, leite condensado e especiarias. Sua origem vem da mistura de tradições indígenas, africanas e portuguesas. As tribos indígenas já cozinhavam o milho, os portugueses introduziram leite e açúcar, e os africanos acrescentaram técnicas de preparo que deixaram o doce mais cremoso. Hoje, a canjica é típica das festas juninas, mas também possui versões em outros países da América Latina, como o "mazamorra" colombiano.
@@ -61,6 +64,7 @@ export default function Canjica() {
 
       <div className="receita-imagem">
         <img src={canjicaFoto} alt="Canjica pronta" className="comida-imagem"/>
+        <img src={canjicaHistoria} alt="Canjica pronta" className="temp-imagem"/>
       </div>
     </div>
   );
