@@ -18,4 +18,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </BrowserRouter>
 );
 
+//rodar antes o comando de baixo pra usar o routes no react
 //npm install react-router-dom

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ReceitasPages.css";
-import chocolateFoto from "../assets/imagens/choc.png"; // coloque a foto do chocolate quente
+import chocolateFoto from "../assets/imagens/choc.png"; 
 
 export default function ChocolateQuente() {
   return (
