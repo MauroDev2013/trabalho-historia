@@ -1,53 +1,62 @@
+/* Reset e estilo base */
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #813f8a;
+  color: #333;
+  height: 100vh; /* força o body a ocupar toda a tela */
+  overflow: hidden; /* evita dupla rolagem */
 }
 
+/* Container principal */
 .receitas-container {
-  max-width: 1000px;
-  max-height: 90vh; /* altura máxima da tela */
-  margin: 60px auto;
+  max-width: 1200px;
+  height: 90vh; /* ocupa quase toda a tela */
+  margin: 40px auto;
   padding: 40px;
   background: linear-gradient(135deg, #dfc9a5, #ffd6a5);
   border-radius: 24px;
   box-shadow: 0 12px 24px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  overflow: hidden; /* esconde o excesso fora da div */
+  gap: 50px;
+  overflow: hidden;
 }
 
+/* Texto da receita com rolagem */
 .receitas-text {
   flex: 1;
-  overflow-y: auto; /* permite rolagem vertical se o conteúdo ultrapassar */
-  padding-right: 10px; /* espaço para a barra de rolagem */
+  overflow-y: auto; /* rolagem vertical apenas no texto */
+  padding-right: 20px;
 }
 
+/* Estilo do texto */
 .receita-historia {
   font-size: 1rem;
   color: #444;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
 }
 
 .receitas-container h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #d35400;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .receitas-container h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #e67e22;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.receitas-container ul, .receitas-container ol {
-  margin-left: 20px;
+.receitas-container ul,
+.receitas-container ol {
+  margin-left: 25px;
   margin-top: 10px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 ul li::marker {
@@ -62,11 +71,67 @@ ul li, ol li {
   color: #252525;
 }
 
+.custo {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Imagem da receita */
 .receita-imagem {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: start; /* alinha no topo para rolagem no texto */
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.receita-imagem img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+/* Responsividade média */
+@media (max-width: 1024px) {
+  .receitas-container {
+    flex-direction: column;
+    height: auto;
+    max-height: 90vh;
+    margin: 40px 20px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .receita-imagem {
+    margin-top: 25px;
+  }
+
+  .receita-imagem img {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .receitas-container h1 {
+    font-size: 2rem;
+  }
+
+  .receitas-container h2 {
+    font-size: 1.4rem;
+  }
+  .receitas-text ul {
+  margin-left: 20px; /* reduz a indentação */
+}
+
+.receita-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible; /* permite que a imagem apareça */
 }
 
 .receita-imagem img {
@@ -77,29 +142,15 @@ ul li, ol li {
   object-fit: cover;
 }
 
-/* ====== Mobile ====== */
-@media (max-width: 768px) {
- .receitas-container {
-    flex-direction: column;
-    margin: 20px 15px;
-    padding: 20px;
-    border-radius: 16px;
-    max-height: 90vh; /* limita a altura da tela */
-    overflow-y: auto; /* adiciona rolagem vertical se o conteúdo passar */
-  }
-
-  .receita-imagem {
-    margin-top: 20px;
-  }
-
-  .receita-imagem img {
-    max-width: 100%;
-    border-radius: 12px;
-  }
-}
 }
 
+/* Responsividade pequena */
 @media (max-width: 480px) {
+  .receitas-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
   .receitas-container h1 {
     font-size: 1.6rem;
   }
@@ -108,7 +159,34 @@ ul li, ol li {
     font-size: 1.2rem;
   }
 
-  .receitas-container ul, .receitas-container ol {
+  .receitas-container ul,
+  .receitas-container ol {
     margin-left: 15px;
   }
+
+  .receitas-text {
+    padding-right: 10px;
+  }
+  ul{
+  padding: 0;
+  }
+}
+
+/* Scroll estilizado opcional */
+.receitas-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.receitas-text::-webkit-scrollbar-track {
+  background: #f0e0d8;
+  border-radius: 8px;
+}
+
+.receitas-text::-webkit-scrollbar-thumb {
+  background: #d35400;
+  border-radius: 8px;
+}
+
+.receitas-text::-webkit-scrollbar-thumb:hover {
+  background: #e67e22;
 }

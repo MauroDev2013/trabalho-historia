@@ -7,9 +7,10 @@ import MilhoIcon from "./components/icons/MilhoIcon";
 import PaoIcon from "./components/icons/PaoIcon";
 import XicaraIcon from "./components/icons/XicaraIcon";
 
-import foto1 from "./assets/imagens/foto.png";
-import foto2 from "./assets/imagens/fotoo.png";
-import foto3 from "./assets/imagens/fotooo.png";
+import foto1 from "./assets/imagens/personagem.png";
+import foto2 from "./assets/imagens/personagem2.png";
+import foto3 from "./assets/imagens/personagem3.png";
+import foto4 from "./assets/imagens/personagem4.png";
 
 import "./App.css";
 
@@ -59,11 +60,13 @@ export default function App() {
                 <PaoIcon className="icone" width={25} height={25} />
               </button>
             </Link>
+            <Link to="/chocolate" textDecoration="none">
+              <button className="chocolate-quente">
+                <span className="texto">Chocolate quente</span>
+                <XicaraIcon className="icone" width={30} height={25} />
+              </button>
+            </Link>
 
-            <button className="chocolate-quente">
-              <span className="texto">Chocolate quente</span>
-              <XicaraIcon className="icone" width={30} height={25} />
-            </button>
           </div>
         </nav>
 
@@ -77,9 +80,9 @@ export default function App() {
 
           <div className="segundaDiv">
             <img src={foto2} alt="foto" className="imagemCriador" />
+            <img src={foto3} alt="foto" className="imagemCriador" />
+            <img src={foto4} alt="foto" className="imagemCriador" />
             <img src={foto1} alt="foto" className="imagemCriador" />
-            <img src={foto3} alt="foto" className="imagemCriador" />
-            <img src={foto3} alt="foto" className="imagemCriador" />
           </div>
         </div>
       </div>
