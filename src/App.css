@@ -162,8 +162,8 @@ html, body {
   
   .menu button {
     scale: 1.2;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     font-size: 0; /* esconde texto */
     justify-content: center;
   }
@@ -174,7 +174,7 @@ html, body {
   }
   
   .nomeCriador {
-    font-size: 23px;
+    font-size: 12pt;
     font-weight: bold;
     margin: 3px;
     padding: 1.5px;
@@ -206,8 +206,8 @@ html, body {
     gap: 0;
     margin-right: 0;
     padding-right: 0;
-    width: 120px;    
-    height: 120px;  
+    width: 100px;    
+    height: 80px;  
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 2px 2px 6px black;
