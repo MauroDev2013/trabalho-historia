@@ -143,6 +143,13 @@ ul li, ol li {
     margin-bottom: 50px;
   }
 
+  ul li{
+    padding: 0;
+  }
+  ul {
+    padding: 0;
+  }
+
 }
 
 .receitas-text::-webkit-scrollbar {

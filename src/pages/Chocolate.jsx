@@ -6,10 +6,19 @@ export default function ChocolateQuente() {
   return (
     <div className="receitas-container">
       <div className="receitas-text">
-        <h1>☕ Chocolate Quente (Bebida Brasileira)</h1>
+        <h1>☕ Chocolate Quente (América Espanhola)</h1>
 
         <p className="receita-historia">
-          O chocolate quente é uma bebida tradicional brasileira, especialmente popular nos dias frios. Feita à base de leite, chocolate e açúcar, possui origem na mistura das tradições indígenas, europeias e africanas. Os indígenas já consumiam o cacau, os europeus introduziram leite e açúcar, e os africanos ajudaram a popularizar a cremosidade da bebida. Hoje, o chocolate quente é consumido em cafés, lanchonetes e em casa, podendo ter variações com canela, chantilly ou especiarias.
+          O chocolate quente tem uma longa história que começa com os povos
+          maias e astecas, que preparavam uma bebida chamada <em>xocoatl</em>,
+          feita com cacau, água e especiarias, bem diferente do que conhecemos
+          hoje. Quando os espanhóis chegaram à América no século XVI,
+          levaram o cacau para a Europa, onde passaram a adicionar açúcar,
+          leite e canela, transformando-o em uma bebida doce e cremosa.
+          No Brasil, o cacau começou a ser cultivado no período colonial
+          e ajudou a popularizar ainda mais essa delícia. Atualmente,
+          o chocolate quente é consumido em todo o mundo, com diversas
+          variações, incluindo chantilly, canela e outras especiarias.
         </p>
 
         <h2>Informações Nutricionais</h2>
@@ -22,7 +31,7 @@ export default function ChocolateQuente() {
 
         <h2>Ingredientes – passado e presente</h2>
         <ul>
-          <li><strong>Antigamente:</strong> cacau moído misturado com água ou leite simples, adoçado manualmente.</li>
+          <li><strong>Antigamente:</strong> cacau moído misturado com água e especiarias, sem açúcar.</li>
           <li><strong>Hoje:</strong> leite, chocolate em pó ou barra, açúcar refinado e especiarias opcionais.</li>
         </ul>
 
@@ -43,7 +52,7 @@ export default function ChocolateQuente() {
 
         <p className="custo">
           <strong>Custo médio da receita hoje:</strong> R$ 9,00 a R$ 10,00 <br/><br/>
-          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 25 para servir 4 pessoas(Cruzados).
+          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 25 para servir 4 pessoas (Cruzados).
         </p>
       </div>
 
