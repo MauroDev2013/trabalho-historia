@@ -55,7 +55,7 @@ export default function Canjica() {
         </ul>
         <p className="custo">
           <strong>Custo médio da receita hoje:</strong> R$ 20,00 a R$ 25,00 <br/><br/>
-          <strong>Custo médio da receita antigamente:</strong> cerca de 3.000 a 5.000 réis
+          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 40(Cruzeiros).
         </p>
       </div>
 

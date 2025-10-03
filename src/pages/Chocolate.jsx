@@ -43,7 +43,7 @@ export default function ChocolateQuente() {
 
         <p className="custo">
           <strong>Custo médio da receita hoje:</strong> R$ 9,00 a R$ 10,00 <br/><br/>
-          <strong>Custo médio da receita antigamente:</strong> cerca de 2.000 a 3.000 réis
+          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 25 para servir 4 pessoas(Cruzados).
         </p>
       </div>
 

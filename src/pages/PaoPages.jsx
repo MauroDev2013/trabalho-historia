@@ -43,12 +43,12 @@ export default function PaoDeAcucar() {
         </ul>
         <p className="custo">
           <strong>Custo médio da receita hoje:</strong> R$ 10,00 a R$ 12,00 <br/>  <br/>
-          <strong>Custo médio da receita antigamente:</strong> cerca de 3.000 a 5.000 réis
+          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 e Cr$ 100 (Cruzeiros, a moeda na época)
         </p>
       </div>
 
       <div className="receita-imagem">
-        <img src={paoFoto} alt="Pão de Açúcar pronto" className="comida-imagem"/>
+        <img src={paoFoto} alt="Pão de Açúcar pronto" className="pao-imagem"/>
       </div>
     </div>
   );

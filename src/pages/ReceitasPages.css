@@ -1,22 +1,20 @@
-/* Reset e estilo base */
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #813f8a;
   color: #333;
-  height: 100vh; /* força o body a ocupar toda a tela */
-  overflow: hidden; /* evita dupla rolagem */
+  height: 100vh; 
+  overflow: hidden;
 }
 
-/* Container principal */
 .receitas-container {
   max-width: 1200px;
-  height: 90vh; /* ocupa quase toda a tela */
+  height: 90vh; 
   margin: 40px auto;
   padding: 40px;
   background: linear-gradient(135deg, #dfc9a5, #ffd6a5);
-  border-radius: 24px;
+  border-radius: 4px;
   box-shadow: 0 12px 24px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: row;
@@ -24,14 +22,12 @@ body {
   overflow: hidden;
 }
 
-/* Texto da receita com rolagem */
 .receitas-text {
   flex: 1;
-  overflow-y: auto; /* rolagem vertical apenas no texto */
+  overflow-y: auto; 
   padding-right: 20px;
 }
 
-/* Estilo do texto */
 .receita-historia {
   font-size: 1rem;
   color: #444;
@@ -78,7 +74,6 @@ ul li, ol li {
   margin-top: 15px;
 }
 
-/* Imagem da receita */
 .receita-imagem {
   flex: 1;
   display: flex;
@@ -95,24 +90,30 @@ ul li, ol li {
   object-fit: cover;
 }
 
-/* Responsividade média */
 @media (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
   .receitas-container {
     flex-direction: column;
     height: auto;
-    max-height: 90vh;
-    margin: 40px 20px;
-    padding: 30px;
-    border-radius: 20px;
+    max-height: 100vh;
+    margin: 0px;
+    padding: 10px;
   }
 
-  .receita-imagem {
-    margin-top: 25px;
+  .comida-imagem{
+    scale: 1;
+    margin-bottom: 25px;
+    padding: 0;
   }
 
-  .receita-imagem img {
-    max-width: 100%;
-    border-radius: 16px;
+  .pao-imagem{
+    scale: 1;
+    margin-bottom: 15px;
+    padding: 0;
   }
 
   .receitas-container h1 {
@@ -123,56 +124,27 @@ ul li, ol li {
     font-size: 1.4rem;
   }
   .receitas-text ul {
-  margin-left: 20px; /* reduz a indentação */
+  margin-left: 20px; 
+  }
+
+  .receita-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .receita-imagem img {
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
+
 }
 
-.receita-imagem {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: visible; /* permite que a imagem apareça */
-}
-
-.receita-imagem img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  object-fit: cover;
-}
-
-}
-
-/* Responsividade pequena */
-@media (max-width: 480px) {
-  .receitas-container {
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .receitas-container h1 {
-    font-size: 1.6rem;
-  }
-
-  .receitas-container h2 {
-    font-size: 1.2rem;
-  }
-
-  .receitas-container ul,
-  .receitas-container ol {
-    margin-left: 15px;
-  }
-
-  .receitas-text {
-    padding-right: 10px;
-  }
-  ul{
-  padding: 0;
-  }
-}
-
-/* Scroll estilizado opcional */
 .receitas-text::-webkit-scrollbar {
   width: 8px;
 }
