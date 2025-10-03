@@ -1,2 +1,2 @@
 # trabalho-historia
-Uma atualização do outros projetos.
+Uma atualizacao do outros projetos.
