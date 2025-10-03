@@ -6,7 +6,7 @@ export default function PaoDeAcucarTradicional() {
   return (
     <div className="receitas-container">
       <div className="receitas-text">
-        <h1>🍞 Pão de Açúcar (América POrtuguesa)</h1>
+        <h1>🍞 Pão de Açúcar (América Portuguesa)</h1>
 
         <p className="receita-historia">
           O Pão de Açúcar (ou Pão Doce com cobertura de açúcar cristal) é um clássico da culinária luso-brasileira. Sua origem remonta ao período colonial, onde a produção de cana-de-açúcar era abundante no Brasil. Era um pão festivo e mais elaborado que o pão simples, usando ingredientes como ovos, leite e gordura para enriquecer a massa, e sendo finalizado com uma generosa camada de açúcar, um luxo na época. Essa receita simples e reconfortante é a que realmente leva o nome "pão de açúcar" na tradição de panificação.
