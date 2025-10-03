@@ -98,18 +98,21 @@ html, body {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-right: 40px;
 }
 
 .segundaDiv {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
-.criador {
+.criadores {
+  display: flex;
   text-align: center;
+  flex-direction: row;
 }
 
 .imagemCriador {
@@ -194,16 +197,21 @@ html, body {
     padding: 0px;
   }
 
-.segundaDiv {
-  display: fles;
-  flex-direction: row;
-  gap: 0px; 
-  margin-left: 50px;
-  padding: 0;
-  width: 80%;
-  height: auto;           
-  justify-items: center;  
-}
+  .segundaDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 0px; 
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;           
+    justify-items: center;  
+  }
+
+  .criadores {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .imagemCriador {
     scale: 0.9;
@@ -211,7 +219,7 @@ html, body {
     margin-right: 0;
     padding-right: 0;
     width: 100px;    
-    height: 80px;  
+    height: 90px;  
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 2px 2px 6px black;

@@ -113,9 +113,9 @@ ul li, ol li {
     padding: 0;
   }
 
-  .pao-imagem{
-    scale: 1;
-    margin-bottom: 15px;
+  .receita-imagem .pao-imagem{
+    width: 100px;
+    margin: 0px;
     padding: 0;
   }
 

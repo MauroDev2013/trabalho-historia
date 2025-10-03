@@ -1,6 +1,8 @@
 import React from "react";
 import "./ReceitasPages.css";
 import paoFoto from "../assets/imagens/paoAcucar.png";
+import PaoHistoria from "../assets/imagens/origem.jpeg";
+
 
 export default function PaoDeAcucarTradicional() {
   return (
@@ -60,7 +62,8 @@ export default function PaoDeAcucarTradicional() {
       </div>
 
       <div className="receita-imagem">
-        <img src={paoFoto} alt="Pão Doce Tradicional com Açúcar Cristal" className="pao-imagem"/>
+        <img src={paoFoto} alt="Pão Doce Tradicional com Açúcar Cristal" className="comida-imagem"/>
+         <img src={PaoHistoria} alt="Canjica pronta" className="temp-imagem"/>
       </div>
     </div>
   );

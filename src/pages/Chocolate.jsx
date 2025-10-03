@@ -12,14 +12,14 @@ export default function ChocolateQuente() {
         <p className="receita-historia">
           O chocolate quente tem uma longa história que começa com os povos
           maias e astecas, que preparavam uma bebida chamada <em>xocoatl</em>,
-          feita com cacau, água e especiarias, bem diferente do que conhecemos
+          feita com cacau, água e especiarias, na época era uma bebida sagrada, bem diferente do que conhecemos
           hoje. Quando os espanhóis chegaram à América no século XVI,
           levaram o cacau para a Europa, onde passaram a adicionar açúcar,
           leite e canela, transformando-o em uma bebida doce e cremosa.
           No Brasil, o cacau começou a ser cultivado no período colonial
           e ajudou a popularizar ainda mais essa delícia. Atualmente,
           o chocolate quente é consumido em todo o mundo, com diversas
-          variações, incluindo chantilly, canela e outras especiarias.
+          variações, incluindo chantilly, marshmallow, canela e outras especiarias.
         </p>
 
         <h2>Informações Nutricionais</h2>
@@ -53,7 +53,7 @@ export default function ChocolateQuente() {
 
         <p className="custo">
           <strong>Custo médio da receita hoje:</strong> R$ 9,00 a R$ 10,00 <br/><br/>
-          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 25 para servir 4 pessoas (Cruzeiros).
+          <strong>Custo médio da receita antigamente:</strong> cerca de Cr$ 20 a Cr$ 25 para servir 4 pessoas (Cruzeiros).  Podendo variar, por conta da inflação na época.
         </p>
       </div>
 

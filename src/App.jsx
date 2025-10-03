@@ -33,6 +33,7 @@ export default function App() {
     <div className="container">
       <div className="esquerdo">
         <h1 className="titulo">Livro de receitas</h1>
+        {/*https://sketchfab.com/ para a imgem 3D */}
         <Canvas camera={{ position: [6, 9, 7], fov: 45 }} className="imagem">
           <ambientLight intensity={1} />
           <directionalLight position={[5, -5, 5]} intensity={1} />
@@ -53,13 +54,13 @@ export default function App() {
               </button>
             </Link>
 
-            <Link to="/pao" textDecoration="none">
+            <Link to="/pao" style={{ textDecoration: "none" }}>
               <button className="pao-acucar">
                 <span className="texto">Pão de açúcar</span>
                 <PaoIcon className="icone" width={25} height={25} />
               </button>
             </Link>
-            <Link to="/chocolate" textDecoration="none">
+            <Link to="/chocolate" style={{ textDecoration: "none" }}>
               <button className="chocolate-quente">
                 <span className="texto">Chocolate quente</span>
                 <XicaraIcon className="icone" width={30} height={25} />
@@ -70,20 +71,31 @@ export default function App() {
         </nav>
 
         <div className="criadores">
+
           <div className="primeiraDiv">
-            <p className="nomeCriador">Isabela A.</p>
-            <p className="nomeCriador">Isabela G.</p>
-            <p className="nomeCriador">Giovana</p>
-            <p className="nomeCriador">Maria L.</p>
-            <p className="nomeCriador">Mauro</p>
+            <div className="pessoa">
+              <p className="nomeCriador">Isabela A.</p>
+              <img src={foto2} alt="foto" className="imagemCriador" />
+            </div>
+            <div className="pessoa">
+              <p className="nomeCriador">Isabela G.</p>
+              <img src={foto3} alt="foto" className="imagemCriador" />
+            </div>
           </div>
 
           <div className="segundaDiv">
-            <img src={foto2} alt="foto" className="imagemCriador" />
-            <img src={foto3} alt="foto" className="imagemCriador" />
-            <img src={foto4} alt="foto" className="imagemCriador" />
-            <img src={foto5} alt="foto" className="imagemCriador" />
-            <img src={foto1} alt="foto" className="imagemCriador" />
+            <div className="pessoa">
+              <p className="nomeCriador">Giovana</p>
+              <img src={foto4} alt="foto" className="imagemCriador" />
+            </div>
+            <div className="pessoa">
+              <p className="nomeCriador">Maria L.</p>
+              <img src={foto5} alt="foto" className="imagemCriador" />
+            </div>
+            <div className="pessoa">
+              <p className="nomeCriador">Mauro</p>
+              <img src={foto1} alt="foto" className="imagemCriador" />
+            </div>
           </div>
         </div>
       </div>
